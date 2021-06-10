@@ -1,0 +1,3 @@
+module.exports = {
+    llave: "Te vi un punto y, flotando ante mis ojos, la imagen de tus ojos se quedo, como la mancha oscura orlada en fuego que flota y ciega si se mira al sol. Adondequiera que la vista clavo,torno a ver las pupilas llamear; mas no te encuentro a ti, que es tu mirada,unos ojos, los tuyos, nada mas. De mi alcoba en el angulo los miro desasidos fantásticos lucir cuando duermo los siento que se ciernen,de par en par abiertos sobre mi.Yo sé que hay fuegos fatuos que en la noche llevan al caminante a perecer;yo me siento arrastrado por tus ojos, pero adonde me arrastran, no lo se."
+}
