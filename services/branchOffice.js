@@ -73,15 +73,17 @@ class BranchOfficeService {
             const imagen = req.images
             let imgs = [];
 
-            for (let index = 0; index < imagen.length; index++) {
-                await cloudinary.uploader.upload(imagen[index].path, {
-                    folder: "Spazer/BranchOffices"
-                }, async (err, result) => {
-                    if (err) {
-                        console.log("Error imagenes", err);
-                    }
-                    imgs.push(result.secure_url)
-                })
+            if (imagen) {
+                for (let index = 0; index < imagen.length; index++) {
+                    await cloudinary.uploader.upload(imagen[index].path, {
+                        folder: "Spazer/BranchOffices"
+                    }, async (err, result) => {
+                        if (err) {
+                            console.log("Error imagenes", err);
+                        }
+                        imgs.push(result.secure_url)
+                    })
+                }
             }
 
             const newBranchOffice = new BranchOffice(req);
