@@ -3,7 +3,7 @@
 require('dotenv').config();
 const mongoose = require("mongoose");
 const db = require("./db");
-const firebase = require("./firebase");
+// const firebase = require("./firebase");
 const config = require("./keys");
 
 const path = require("path"),
@@ -22,7 +22,7 @@ const path = require("path"),
 db.connect();
 
 //firebase conection
-firebase.connect();
+//firebase.connect();
 
 //middlewares
 
