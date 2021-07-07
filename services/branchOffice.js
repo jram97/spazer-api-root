@@ -102,11 +102,12 @@ class BranchOfficeService {
             }
 
             if (req.services) {
-                const newServices = await servicesService.createMany(req.services)
-                if (newServices.length > 0) {
-                    newBranchOffice.services = await newServices.map(function (service) {
-                        return service._id
-                    })
+                // const newServices = await servicesService.createMany(req.services)
+                if (req.services.length > 0) {
+                    newBranchOffice.service = req.services
+                    // newBranchOffice.services = await newServices.map(function (service) {
+                    //     return service._id
+                    // })
                 } else {
                     newBranchOffice.service = [];
                 }

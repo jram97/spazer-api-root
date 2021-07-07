@@ -42,6 +42,16 @@ const BranchOfficeSchema = new Schema({
         requiered: false,
         default: false
     },
+    phone: {
+        type: String,
+        required: false,
+        default: false,
+    },
+    typeServices: {
+        type: String,
+        required: false,
+        default: false,
+    },
 }, { timestamps: { createdAt: true, updatedAt: true } }
 );
 
